@@ -1,4 +1,4 @@
-package KV24
+
 import scala.io.StdIn._
 import scala.math.{abs, pow, sqrt}
 import scala.runtime.RichDouble
