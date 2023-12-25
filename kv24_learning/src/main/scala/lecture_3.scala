@@ -24,13 +24,13 @@ object lecture_3  extends App{
   // Отнаследуйте их от трейта "фигура", с методом расчета площади.
   // Реализуйте метод расчета площади в каждом из наследников
 
-  private val Pi = 3.14
+
   trait figure {
     def findArea: Int
   }
 
   case class Circle(radius: Int) extends figure {
-    override def findArea: Int = (sqr(radius) * Pi).toInt
+    override def findArea: Int = (sqr(radius) * 3.14).toInt
   }
   case class Rectangle(high: Int, width: Int) extends figure {
     override def findArea: Int = high * width
